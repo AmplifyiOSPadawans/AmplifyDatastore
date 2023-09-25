@@ -1,0 +1,15 @@
+projects:
+  BlogAppApi:
+    schemaPath: graphql/schema.json
+    includes:
+      - 'y'
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: swift
+        generatedFileName: API.swift
+        docsFilePath: .
+extensions:
+  amplify:
+    version: 3
