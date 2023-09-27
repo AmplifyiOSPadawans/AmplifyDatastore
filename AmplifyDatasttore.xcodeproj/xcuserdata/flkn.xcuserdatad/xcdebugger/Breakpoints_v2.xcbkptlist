@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0BAEB965-9B37-43CD-8156-041451A2E048"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8751F89C-179A-4C19-A423-1F1AD4790CCF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmplifyDatasttore/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8751F89C-179A-4C19-A423-1F1AD4790CCF - f05ee7bd86ba48e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in AmplifyDatasttore.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AmplifyDatasttore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/flkn/Desktop/AmplifyDatasttore/AmplifyDatasttore/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "8751F89C-179A-4C19-A423-1F1AD4790CCF - cad2874abc9dda10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #2 @Sendable () async -&gt; () in AmplifyDatasttore.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AmplifyDatasttore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/flkn/Desktop/AmplifyDatasttore/AmplifyDatasttore/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "8751F89C-179A-4C19-A423-1F1AD4790CCF - 4b2f82ffea1dd4f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #2 @Sendable () async -&gt; () in AmplifyDatasttore.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AmplifyDatasttore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/flkn/Desktop/AmplifyDatasttore/AmplifyDatasttore/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2FC36EE-E708-49D8-A750-45A9F4330EE6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmplifyDatasttore/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "refreshTable()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A2FC36EE-E708-49D8-A750-45A9F4330EE6 - b8899d0bb9e6d625"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmplifyDatasttore.ViewController.refreshTable() -&gt; ()"
+                  moduleName = "AmplifyDatasttore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/flkn/Desktop/AmplifyDatasttore/AmplifyDatasttore/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  uuid = "A2FC36EE-E708-49D8-A750-45A9F4330EE6 - b8899d0bb9e6d625"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmplifyDatasttore.ViewController.refreshTable() -&gt; ()"
+                  moduleName = "AmplifyDatasttore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/flkn/Desktop/AmplifyDatasttore/AmplifyDatasttore/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC49637E-E175-47A8-A84E-88111E43F49B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmplifyDatasttore/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CC49637E-E175-47A8-A84E-88111E43F49B - e97681617d2393d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmplifyDatasttore.ViewController.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "AmplifyDatasttore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/flkn/Desktop/AmplifyDatasttore/AmplifyDatasttore/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "CC49637E-E175-47A8-A84E-88111E43F49B - e97681617d2393f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AmplifyDatasttore.ViewController.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "AmplifyDatasttore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/flkn/Desktop/AmplifyDatasttore/AmplifyDatasttore/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0026CC6D-F062-4733-A59E-01AD786F720B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AmplifyDatasttore/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

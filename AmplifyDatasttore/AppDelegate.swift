@@ -8,7 +8,7 @@
 import UIKit
 import Amplify
 import AWSDataStorePlugin
-
+import AWSAPIPlugin
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do {
             let dataStorePlugin = AWSDataStorePlugin(modelRegistration: AmplifyModels())
             try Amplify.add(plugin: dataStorePlugin)
+            
+            try Amplify.add(plugin: AWSAPIPlugin())
+            
             try Amplify.configure()
             print("Amplify configured with DataStore plugin")
         } catch {

@@ -13,14 +13,7 @@ class ViewController: UIViewController {
     
     let datastore = DataStoreHelper()
     
-    var postList: [Post] = [
-        Post(
-            title: "example",
-            status: .active,
-            rating: 4,
-            content: "Lorem ipsum dolor sit amet, consectetur in."
-        )
-    ]
+    var postList: [Post] = []
 
     
     override func viewDidLoad() {
@@ -35,24 +28,62 @@ class ViewController: UIViewController {
         self.postTableView.backgroundColor = .systemGray5
         
         Task { await datastore.changeSync() }
+        
+        Task {
+            if let posts = await datastore.getPosts() {
+                self.postList = posts
+                refreshTable()
+            }
+        }
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "GoToAddPost") {
+            let secondView = segue.destination as! AddPostViewController
+            
+            let object = sender as! [String: Any?]
+            secondView.postTitle = object["title"] as? String
+            secondView.content = object["content"] as? String
+            secondView.rating = object["rating"] as? Int
+            secondView.status = object["status"] as? Bool
+        }
+    }
+    
     @IBAction func addPost(_ sender: UIButton) {
-        
         performSegue(withIdentifier: "GoToAddPost", sender: self)
     }
     
     func deletePost(post: Post) {
         print("Deleting row")
+        
+        Task { await datastore.deletePost(post: post) }
     }
     
     func editPost(post: Post) {
         print("Editing row")
+        
+        let sender: [String: Any?] = [
+            "title": post.title,
+            "content": post.content,
+            "rating": post.rating,
+            "status": post.status == .active ? true : false,
+        ]
+        self.performSegue(withIdentifier: "GoToAddPost", sender: sender)
     }
     
     func refreshTable() {
-        self.postTableView.beginUpdates()
-        self.postTableView.endUpdates()
+        self.postTableView.reloadData()
+    }
+    
+    func showAlert(_ message: String) {
+        let dialogMessage = UIAlertController(title: "Atention", message: message, preferredStyle: .alert)
+        
+        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            dialogMessage.dismiss(animated: true)
+        })
+        
+        dialogMessage.addAction(ok)
+        self.present(dialogMessage, animated: true, completion: nil)
     }
 }
 
@@ -66,10 +97,6 @@ extension ViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: PostViewCell.id, for: indexPath) as! PostViewCell
         cell.setPost(post: self.postList[indexPath.row])
-        
-        cell.lblTitle.text = "example"
-        cell.lblContent.text = "example"
-        cell.lblRating.text = "example"
         
         return cell
     }

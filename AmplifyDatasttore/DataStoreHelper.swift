@@ -9,6 +9,16 @@ import Amplify
 
 class DataStoreHelper {
     
+    func clearDB() async {
+        do {
+            try await Amplify.DataStore.clear()
+            print("DataStore cleared")
+        } catch let error as DataStoreError {
+            print("Failed with error \(error)")
+        } catch {
+            print("Unexpected error \(error)")
+        }
+    }
     func changeSync() async {
         do {
             try await Amplify.DataStore.stop()

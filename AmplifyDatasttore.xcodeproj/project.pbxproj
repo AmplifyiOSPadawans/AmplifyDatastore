@@ -25,6 +25,7 @@
 		CAD46DC32ABE5679001DCDBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD46DC12ABE5679001DCDBE /* LaunchScreen.storyboard */; };
 		CAD46DCC2ABE56D7001DCDBE /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = CAD46DCB2ABE56D7001DCDBE /* AWSDataStorePlugin */; };
 		CAD46DCE2ABE56D7001DCDBE /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = CAD46DCD2ABE56D7001DCDBE /* Amplify */; };
+		CAD6B72B2AC4E0DE00614A37 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = CAD6B72A2AC4E0DE00614A37 /* AWSAPIPlugin */; };
 		D5F646B08365C97DCEAF71E6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815235FAFF74D0019491A3F /* Post.swift */; };
 		E8E66B3EE7074E83BB83FB7F /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FB4E965BF524178B5581C /* AmplifyModels.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD6B72B2AC4E0DE00614A37 /* AWSAPIPlugin in Frameworks */,
 				CAD46DCC2ABE56D7001DCDBE /* AWSDataStorePlugin in Frameworks */,
 				CAD46DCE2ABE56D7001DCDBE /* Amplify in Frameworks */,
 			);
@@ -94,6 +96,7 @@
 				CAD46DB42ABE5677001DCDBE /* Products */,
 				7FF974FBD492AD57CBE62DAA /* AmplifyConfig */,
 				338C78A89BD3CA1733E1590C /* AmplifyModels */,
+				CAD6B7292AC4E0DE00614A37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +126,13 @@
 			path = AmplifyDatasttore;
 			sourceTree = "<group>";
 		};
+		CAD6B7292AC4E0DE00614A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +152,7 @@
 			packageProductDependencies = (
 				CAD46DCB2ABE56D7001DCDBE /* AWSDataStorePlugin */,
 				CAD46DCD2ABE56D7001DCDBE /* Amplify */,
+				CAD6B72A2AC4E0DE00614A37 /* AWSAPIPlugin */,
 			);
 			productName = AmplifyDatasttore;
 			productReference = CAD46DB32ABE5677001DCDBE /* AmplifyDatasttore.app */;
@@ -455,6 +466,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CAD46DCA2ABE56D7001DCDBE /* XCRemoteSwiftPackageReference "amplify-swift" */;
 			productName = Amplify;
+		};
+		CAD6B72A2AC4E0DE00614A37 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAD46DCA2ABE56D7001DCDBE /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
